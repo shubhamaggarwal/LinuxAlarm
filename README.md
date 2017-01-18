@@ -9,7 +9,7 @@ A simple script based alarm clock
 
 ### Setting up a cronjob
 * Go to your terminal and run the following command : `crontab -e`
-* Edit the file with [minutes] * * * * `cd /path_to_cloned_directory/ && ./alarmscript.sh` where [minutes] is same as the minutes you have set in your alarm.
+* Edit the file with `[minutes] * * * * cd /path_to_cloned_directory/ && ./alarmscript.sh` where [minutes] is same as the minutes you have set in your alarm.
 * Save and exit.
 
 ### Alternatively you can also use `at` command
