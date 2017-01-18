@@ -5,8 +5,12 @@ import datetime
 
 current_time = datetime.datetime.now()
 
-hours = int(current_time.strftime("%H"))
-minutes = int(current_time.strftime("%M"))
+current_hours = int(current_time.strftime("%H"))
+current_minutes = int(current_time.strftime("%M"))
 
-if (hours >= 9 and minutes >= 30) or hours >= 10: 
+# Setup the time of alarm here.
+hours = 9
+minutes = 30
+
+if (current_hours >= hours and current_minutes >= minutes) or current_hours >= hours + 1: 
     webbrowser.open("/media/canoodle/Data/MUSIC/9.mp3")
